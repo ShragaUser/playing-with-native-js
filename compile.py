@@ -1,5 +1,5 @@
 def compile(rootFileUrl):
-    print("compiling")
+    print("starting compile process...")
     rootFile = getFileStringByUrl(rootFileUrl)
     nextRequire = rootFile.find("require")
     
@@ -65,6 +65,7 @@ def writetoFile(fileData):
 def main():
     compiledFile = compile("./script.js")
     writetoFile(compiledFile)
+    print("finished compile process")
 
 if __name__ == "__main__":
     main()

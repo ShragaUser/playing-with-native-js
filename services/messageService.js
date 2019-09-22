@@ -1,5 +1,5 @@
 const messageService = () => ({
-	generateMessageFromKey: (keyCode) => keyCode.toString()	
+	generateMessageFromKey: (keyCode) => keyCode.toString()
 })
 
 module.exports = messageService;
